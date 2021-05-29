@@ -12,13 +12,13 @@
 
 ### End Goal
 
-    - [ ] Support both text and image sharing in chats
+- [ ] Support both text and image sharing in chats
 
-    - [ ] A flow for users to register using a username/chat handles.
+- [ ] A flow for users to register using a username/chat handles.
 
-    - [ ] A flow for users to login using their username/chat handles.
+- [ ] A flow for users to login using their username/chat handles.
 
-    - [ ] A flow for users to create private chat rooms.
+- [ ] A flow for users to create private chat rooms.
 
     - [ ] A flow to display a list of users who are online and have interacted earlier with you.
 
