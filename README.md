@@ -20,7 +20,7 @@
 
     - [ ] A flow for users to create private chat rooms.
 
-    - [ ] A flow to display a list of users who are online and have had earlier interactions with you.
+    - [ ] A flow to display a list of users who are online and have interacted earlier with you.
 
     - [ ] A flow for users to mute and block messages from specific username/chat handles.
 
@@ -49,7 +49,7 @@
 
 #### Frontend Task
 
-    - [ ] Build a dashboard that allows users to see other online users have had earliers interactions with you.
+    - [ ] Build a dashboard that allows users to see other online users that have interacted earlier with you.
 
     - [ ] Build an interface for sending messages to other users directly.
 
