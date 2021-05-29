@@ -57,9 +57,11 @@
 
 #### Backend Task
 
-- [ ] Build mechanism to store conversation history.
+    - [ ] Build mechanism to store conversation history.
 
-- [ ] Build mechanism to keep track of blocked and muted chats for each user.
+    - [ ] Build mechanism to keep track of blocked and muted chats for each user.
+
+
 <!-- 
 mongdb atlas
 username: main_user
