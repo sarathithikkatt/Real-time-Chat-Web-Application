@@ -57,7 +57,20 @@
 
 #### Backend Task
 
-    - [ ] Build mechanism to store conversation history.
+- [ ] Build mechanism to store conversation history.
 
-    - [ ] Build mechanism to keep track of blocked and muted chats for each user.
+- [ ] Build mechanism to keep track of blocked and muted chats for each user.
+<!-- 
+mongdb atlas
+username: main_user
+password: 2nynzDdS4syKjrAj
+connection: mongodb+srv://main_user:2nynzDdS4syKjrAj@rcacluster.vfyo3.mongodb.net/test
 
+backend : 5000
+frontend : 
+
+Node packages
+    Socket.io
+    uuid
+
+    axios? -->
