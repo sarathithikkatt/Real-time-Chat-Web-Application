@@ -31,15 +31,15 @@
 
 #### Frontend Task
 
-    - [ ] Build a interact for users to register using a username/handle.
+    - [x] Build a interact for users to register using a username/handle.
 
     - [ ] A mechanism to validate the user's identity.
 
-    - [ ] Build an interface for user to login into the chat application.
+    - [x] Build an interface for user to login into the chat application.
         
 #### Backend Task
 
-    - [ ] Build endpoint for storing user details.
+    - [x] Build endpoint for storing user details.
 
     - [ ] Build endpoint for storing chat room details.
 
