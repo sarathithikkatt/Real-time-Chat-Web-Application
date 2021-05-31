@@ -1,0 +1,17 @@
+
+option1 https://coolors.co/000000-14213d-fca311-e5e5e5-ffffff
+Rich Black FOGRA
+            : 0A0A0A
+Oxford Blue : 14213D
+Orange Web  : FCA311
+Platinum    : E5E5E5 
+White       : FFFFFF
+
+option2 https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51
+Charcoal    : 264653
+Persian Green
+            : 2A9D8F
+Orange Yellow crayola
+            : E9C46A
+Sandy Brown : F4A261
+Burnt Sienna: E76F51

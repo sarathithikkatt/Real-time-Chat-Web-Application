@@ -1,0 +1,67 @@
+*{
+    margin: auto;
+}
+
+
+h3{
+    color: #E5E5E5;
+}
+
+.header label{
+    color: #E5E5E5;
+}
+.thebody{
+    background-color:#E5E5E5 ;
+    height: auto;    
+}
+.header{
+    background-color: #14213D;
+    min-height: auto;
+	position:relative;
+	top:0;
+	left:0;
+	color:white;
+	
+}
+#usernameform{
+	font-family:verdana;
+	font-size:12px;
+    outline: none;
+    border: none;
+}
+#passwordform{
+	font-family:verdana;
+	font-size:12px;
+    outline: none;
+    border: none;
+}
+.submitlogin{
+	background:#E5E5E5;
+	color:#14213D;
+	position:relative;
+	cursor:pointer;	
+    outline: none;
+    border: none;
+}
+ .submitlogin:hover{
+	background:#14213D;
+	color:#E5E5E5;
+    /* border-bottom: 1px; */
+    border: 5px #E5E5E5;
+ }
+
+ .middle{
+     margin: 0.5%;
+     font-family:sans-serif;
+ }
+
+ .middle label{
+     padding: 0.1%;
+     color: #0A0A0A;
+ }
+ .signup-conatiner{
+     margin: auto;
+     padding: 10PX;
+     /* background-color: snow; */
+     background-color: #E5E5E5;
+ }
