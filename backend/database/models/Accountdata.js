@@ -19,7 +19,7 @@ const AccountSchema = new Schema({
     status : Boolean,    
 })
 
-var Accountdata = mongoose.model('Users',AccountSchema);
+var Accountdata = mongoose.model('Accounts',AccountSchema);
 
 module.exports = Accountdata;
 

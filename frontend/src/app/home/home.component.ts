@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-// import { timeStamp } from 'console';
 import { AccountService } from '../account.service';
 import { AccountModel } from './account.model';
 
@@ -28,8 +27,12 @@ export class HomeComponent implements OnInit {
     password : '',
     phone : '',
     gender : '',
-    dob :'' , 
+    dob :'' ,
+  }
 
+  loginItem = {
+    username_or_email:'',
+    password:''
   }
 
   addAccount(){
@@ -37,25 +40,17 @@ export class HomeComponent implements OnInit {
     alert("Sucess");
   }
   
-  // private _accntObj: any;
-  // public get accntObj(): any {
-  //   return this._accntObj;
-  // }
-  // public set accntObj(value: any) {
-  //   this._accntObj = value;
-  // }
+  acntobj:any;
 
-  // addAccount()
-  // {
-  //   this.accountService.newAccount(this.accountItem)
-  //   .subscribe(data => {
-  //     this.accntObj = data;
-  //     alert(this.accntObj);
-  //   });
-    
-  //   var email = this.accountItem.email;
-  //   alert("Account data passed from front end : "+email);
-  //   // this.router.navigate(["/signin"]);
-  // }
-
+  search(){
+    this.accountService.searchAccount(this.loginItem.username_or_email).subscribe(data => {
+      this.acntobj = data;
+      if(this.acntobj!=null){
+        alert("Succesfull login");
+      }else{
+        alert("No such account");
+      }
+    })
+    alert('homecomponent.ts')
+  }
 }

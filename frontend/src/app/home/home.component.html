@@ -11,7 +11,7 @@
                 <div class="login-container">
                     <div id="usernameform" class="header">
                         <label for="usernamefield">Email or Username</label><br>
-                        <input placeholder="Email or Username" type="mail" name="username" style="border: none; outline: none;"> <br>
+                        <input required class="form-control" placeholder="Email or Username" type="text" name="username_or_email" style="border: none; outline: none;" [(ngModel)]="loginItem.username_or_email" > <br>
                         <input type="checkbox" title="Keep-me-logged-in" />Keep me logged in <br>                        
                     </div>
                     
@@ -20,12 +20,13 @@
             <div class="col-sm-2">
                 <div id="passwordform" class="header">
                     <label for="passwordfield">Password</label>
-                    <input placeholder="Password" type="password" name="password" style="border: none; outline: none;" /><br>
+                    <br>
+                    <input required class="form-control" placeholder="Password" type="password" name="password-login" style="border: none; outline: none;" [(ngModel)]="loginItem.password" /><br>
                     Forgot your password?
                 </div>
             </div>
             <div class="col-sm-1">
-                <input type="submit" class="submitlogin" value="login">
+                <input type="submit" class="btn btn-primary btn-lg btn-block" id="signin-btn" (click)='search()' value="login">
             </div>  
         </div>
         <br>
@@ -90,7 +91,7 @@
                                 <!-- Password -->
                                 <div class="col-sm-12">
                                 <label for="password-input">Password</label>
-                                 <input required type="text" class="form-control" id="password-input" placeholder="Password" name="password" [(ngModel)]="accountItem.password" >
+                                 <input required type="password" class="form-control" id="password-input" placeholder="Password" name="password" [(ngModel)]="accountItem.password" >
                                  </div>
                             </div>     
                         </div>
@@ -100,7 +101,7 @@
                                 <!-- Retype Password -->
                                 <div class="col-sm-12">
                                 <label for="repassword-input">Retype-Password</label>
-                                <input required type="text" class="form-control" id="repassword-input" placeholder="Retype-Password"  >
+                                <input required type="password" class="form-control" id="repassword-input" placeholder="Retype-Password"  >
                                 </div>
                             </div>
                         </div>

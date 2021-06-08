@@ -23,12 +23,13 @@ export class AccountService {
   })
   }
   
-  searchAccount(email:any)
+  searchAccount(username_or_email:any)
   {
     let httpHeaders = new HttpHeaders({
       "content-Type" : "application/json"
     });
-    return this.http.get<any>("http://localhost:5000/account/searchaccount/"+email,{headers:httpHeaders});
+    alert("accountservices");
+    return this.http.get<any>("http://localhost:5000/account/searchaccount/"+username_or_email,{headers:httpHeaders});
     
   } 
 

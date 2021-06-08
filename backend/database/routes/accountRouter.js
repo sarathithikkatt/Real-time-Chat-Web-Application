@@ -5,7 +5,7 @@ const accountRouter = express.Router();
 const Accountdata = require("../models/Accountdata");
 
 
-// designs
+// home
 accountRouter.get("/",(req,res) =>
 {
     res.header("Access-Control-Allow-Origin", "*");
@@ -27,17 +27,8 @@ accountRouter.post("/addaccount",(req,res)=>{
 
     console.log(req.body);
 
-    new account
-    // var accnt = {
-    //     firstname : req.body.firstname,
-    //     surname : req.body.surname,
-    //     email : req.body.email,
-    //     username : req.body.username,
-    //     password : req.body.password,
-    //     phone : req.body.phone,
-    //     gender : req.body.gender,
-    //     dob : req.body.dob,  
-    // }
+    // new accounts
+    
     var accnt = {
         firstname : req.body.data.firstname,
         surname : req.body.data.surname,
@@ -58,17 +49,26 @@ accountRouter.post("/addaccount",(req,res)=>{
 });
 
 // search account
-accountRouter.get("/searchaccount/:email",(req,res)=>{
+accountRouter.get("/searchaccount/:email_or_username",(req,res)=>{
 
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods:GET,POST,PATCH,PUT,DELETE,OPTIONS");
 
-    const email = req.params.email;
-
-    Accountdata.findOne({email : email})
-    .then(function(account){
-        res.send(account);
-        console.log(account);
+    const email_or_username = req.params.email_or_username;
+    console.log('ivde ethi')
+    Accountdata.findOne(
+        {
+            $or: [
+                {username : email_or_username},
+                {email : email_or_username}
+            ]            
+        }
+        )
+    .then(function(data){
+        res.send(data);
+        console.log(email_or_username)
+        console.log("login reached backend")
+        console.log(data);
     });
 
 });
