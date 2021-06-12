@@ -28,7 +28,7 @@ export class AccountService {
     let httpHeaders = new HttpHeaders({
       "content-Type" : "application/json"
     });
-    alert("accountservices");
+    // alert("accountservices");
     return this.http.get<any>("http://localhost:5000/account/searchaccount/"+username_or_email,{headers:httpHeaders});
     
   } 

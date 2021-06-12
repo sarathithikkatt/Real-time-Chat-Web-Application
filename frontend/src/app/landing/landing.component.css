@@ -1,0 +1,14 @@
+*{
+    margin: auto;
+    padding: 0%;
+}
+
+.main{
+    /* max-width: 180vh; */
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.col{
+    border: black;
+}

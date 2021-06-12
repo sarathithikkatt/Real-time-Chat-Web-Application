@@ -43,7 +43,7 @@
 
     - [ ] Build endpoint for storing chat room details.
 
-    - [ ] Build a password validation mechanism to authenticate logins.
+    - [x] Build a password validation mechanism to authenticate logins.
 
 ### Milestone 2 (Day 15)
 
