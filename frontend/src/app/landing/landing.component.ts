@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AccountService } from '../account.service';
 
 @Component({
   selector: 'app-landing',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private accountService:AccountService,private router:Router) { }
 
   ngOnInit(): void {
   }
+  // for searching
+  searchItem = {
+    searchkey:''
+  }
+
+  result:any
+
+  search(){
+    this.accountService.searchAccount(this.searchItem.searchkey).subscribe(data =>{
+      this.result = data;
+      if (this.result==null){
+        alert("No such user exist");
+      }else{
+        alert("user exist");
+      }
+    });
+  }
+  
 
 }

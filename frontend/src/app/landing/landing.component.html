@@ -1,7 +1,22 @@
 <div class="main">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+            <div class="col-6 col-md-4">
+                <div class="container left">
+                  <div class="row">
+                      <!-- searchbar -->
+                      <div class="col w-auto p-2">
+                          <div class="row">
+                            <div class="input-group">
+                                <input type="search" class="form-control rounded" [(ngModel)]="searchItem.searchkey" placeholder="Search" aria-label="Search"
+                                  aria-describedby="search-addon" />
+                                <button type="button" class="btn btn-dark" id="searcg-btn" (click)='search()' value="search" >search</button>
+                              </div>
+                          </div>                        
+                      </div>
+                  </div>  
+                </div>
+            </div>
             <div class="col-6 col-md-8">.col-6 .col-md-8</div>
         </div>
     </div>
