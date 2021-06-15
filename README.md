@@ -14,9 +14,9 @@
 
     - [ ] Support both text and image sharing in chats
 
-    - [ ] A flow for users to register using a username/chat handles.
+    - [x] A flow for users to register using a username/chat handles.
 
-    - [ ] A flow for users to login using their username/chat handles.
+    - [x] A flow for users to login using their username/chat handles.
 
     - [ ] A flow for users to create private chat rooms.
 
